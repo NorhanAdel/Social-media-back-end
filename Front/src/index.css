@@ -1,0 +1,128 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   outline: none;
+   
+   border: none;
+   color: var(--text-color);
+ }
+
+ html {
+   scroll-behavior: smooth;
+ }
+
+ body {
+   --primary-color: #EA6C39;
+   --white-color: #ffffff;
+   --text-color: #d2d0d0;
+   --body-background-color: #dfdbdb;
+   --black-color: #111111;
+   --inputbg: #47036f;
+   --blur: 2px;
+   --radius: 0.25rem;
+
+   font-family: 'Roboto',
+     sans-serif;
+   position: relative;
+ }
+
+
+ .btn {
+   background-color: var(--primary-color);
+   padding: 12px 15px;
+   color: var(--white-color);
+
+   cursor: pointer;
+ }
+
+ .flex {
+   display: flex;
+ }
+
+ ::selection {
+   background-color: var(--primary-color);
+ }
+
+ ::-webkit-scrollbar {
+   width: 5px;
+   height: 5px;
+ }
+
+ ::-webkit-scrollbar-track {
+   background: #fff;
+   border-radius: 3px;
+ }
+
+ ::-webkit-scrollbar-thumb {
+   background: var(--primary-color);
+   border-radius: 3px;
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+   opacity: 0.6;
+ }
+
+ ._container {
+   padding-left: 30px;
+   padding-right: 30px;
+   margin: auto;
+ }
+
+ @media (min-width: 768px) {
+   ._container {
+     width: 750px;
+   }
+ }
+
+ @media (min-width: 992px) {
+   ._container {
+     width: 970px;
+   }
+ }
+
+ @media (min-width: 1200px) {
+   ._container {
+     width: 1170px;
+   }
+ }
+
+ .__google {
+   background-color: #db4437 !important;
+ }
+
+ .__amazon {
+   background-color: #ff9900 !important;
+ }
+
+ .__linkedin {
+   background-color: #007bb6 !important;
+ }
+
+ img {
+   display: block;
+   width: 100%;
+   margin: auto;
+ }
+
+ .icon-container {
+   cursor: pointer;
+   border-radius: 6px;
+   background-color: #fff;
+   width: 45px;
+   height: 45px;
+   display: flex;
+   margin-right:10px;
+   align-items: center;
+   justify-content: center;
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+   svg {
+     fill: var(--primary-color);
+     font-size: 1.7rem;
+   }
+ }

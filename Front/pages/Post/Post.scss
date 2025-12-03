@@ -1,0 +1,119 @@
+.post_container {
+  margin-top: 50px;
+  height: auto;
+  padding-bottom: 40px;
+  width: 700px;
+  position: relative;
+
+  .creatPost {
+    width: 100%;
+    z-index: 1000;
+    padding: 2rem 1.5rem;
+    background-color: rgb(232, 232, 232);
+
+    p {
+      font-size: 14px;
+      color: var(--black-color);
+      margin: 20px 0;
+    }
+
+    form {
+      display: block;
+
+      input {
+        width: 100%;
+        padding: 9px 15px;
+        margin: 15px 0;
+      }
+
+      label {
+        color: var(--black-color);
+      }
+   
+
+    .upload_imag {
+      width: 160px;
+      height: 160px;
+      border: 1px dashed rgb(119, 118, 118);
+      position: relative;
+      text-align: center;
+
+      input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      svg {
+        fill: var(--primary-color);
+        font-size: 30px;
+        margin-top: 35%;
+      }
+    }
+
+    .images {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+
+      .cancel {
+        width: 150px;
+       
+        border-radius: 10px;
+        color: var(--black-color);
+        border: 1px solid black;
+        background: var(--white-color);
+      }
+
+      .start {
+        width: 150px;
+       
+        border-radius: 10px;
+        background: var(--primary-color);
+
+        color: var(--white-color);
+      }
+    }
+      }
+  }
+
+  h1 {
+    font-size: 25px;
+    margin: 10px 0;
+    color: var(--black-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .sub-heading {
+    width: 70px;
+    height: 2px;
+    background: var(--primary-color);
+    display: block;
+    position: absolute;
+    left: 47%;
+    border-radius: 20px;
+    margin-top: -9px;
+    margin-bottom: 44px;
+  }
+
+  .posts {
+    margin-top: 50px;
+    height: 500px;
+    overflow-y: scroll;
+  }
+}

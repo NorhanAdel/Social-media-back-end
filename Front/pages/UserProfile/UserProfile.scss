@@ -1,0 +1,47 @@
+@import '../../App.scss';
+@import '../../styles/mixins';
+
+#user-profile {
+    .user-container {
+        main {
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .content {
+            .form-container {
+                form#user-form {
+                    .send-button {
+                        margin-right: 1rem;
+                    }
+
+                    .input-field {
+                        margin-bottom: 1rem;
+
+                        input.disabled {
+                            cursor: not-allowed;
+                            color: $pColor;
+                            filter: grayscale(0.5) opacity(0.5);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        section.title-section {
+            @include flexCenter($justify: flex-start, $align: flex-start);
+            gap: 1rem;
+
+            .section-title {
+                margin: 0;
+            }
+
+            .title-icon {
+                svg {
+                    @include responsiveFontSize($baseSize: 5em);
+                }
+            }
+        }
+    }
+}
